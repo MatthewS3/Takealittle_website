@@ -2,8 +2,8 @@
     padding: 20px;
     text-align: center;
     background-color: maroon;
-    color: white;
-    margin-bottom: 29rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5rem;
     margin-right: 12rem;
   }
 
@@ -13,7 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: maroon;
 }
 
 .cube {
@@ -21,8 +21,8 @@ body {
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
-    transform: rotateX(0) rotateY(0);
-    transition: transform 15s;
+    transform: rotateX(90) rotateY(180);
+    transition: transform 12s;
     margin-right: 20rem;
 }
 
@@ -30,18 +30,18 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    border: 2px solid #333;
+    border: 2px solid #222;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
 
-.front  { transform: rotateY(0deg) translateZ(100px); background-color: #FF5733; }
-.back   { transform: rotateY(180deg) translateZ(100px); background-color: #3498DB; }
-.left   { transform: rotateY(-90deg) translateZ(100px); background-color: #E74C3C; }
-.right  { transform: rotateY(90deg) translateZ(100px); background-color: #2ECC71; }
-.top    { transform: rotateX(90deg) translateZ(100px); background-color: #F1C40F; }
+.front  { transform: rotateY(0deg) translateZ(100px); background-color: #ff3633; }
+.back   { transform: rotateY(180deg) translateZ(100px); background-color: #2fffee; }
+.left   { transform: rotateY(-90deg) translateZ(100px); background-color: #ff8000; }
+.right  { transform: rotateY(90deg) translateZ(100px); background-color: #40ff00; }
+.top    { transform: rotateX(90deg) translateZ(100px); background-color: #0f66f1; }
 .bottom { transform: rotateX(-90deg) translateZ(100px); background-color: #9B59B6; }
 
 .cube:hover {

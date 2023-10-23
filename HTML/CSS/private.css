@@ -1,0 +1,115 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+header {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: rgb(83, 82, 82);
+}
+
+.dropdown:hover .submenu {
+    display: square;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: maroon;
+    border: solid black;
+}
+
+.submenu li {
+    border-top: 1px solid grey;
+}
+
+.submenu a {
+    padding: 10px 10px;
+}
+
+.submenu {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+    opacity: 1;}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.product {
+    border: 2px solid maroon;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    width: 18%;
+    height: 10%;
+}
+
+.product img {
+    /* max-width: 30%;
+    max-height: 40%; */
+    width: 90%;
+    height: 13rem;
+}
+
+footer {
+    background-color: maroon;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: orangered;
+}
